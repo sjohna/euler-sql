@@ -35,7 +35,7 @@ func main() {
 	}
 
 	// language=SQL
-	SQL := `select problem_number, answer from solution`
+	SQL := `select problem_number, answer from solution order by problem_number asc`
 
 	rows, err := db.Query(SQL)
 	if err != nil {
